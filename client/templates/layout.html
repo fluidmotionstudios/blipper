@@ -5,8 +5,11 @@
 <template name="layout">
   {{> navbar}}
   <div class="container">
-    {{> atForm}}
-    {{> yield}}
+    <div class="row">
+      <div class="col s12">
+        {{> yield}}
+      </div>
+    </div>
   </div>
   {{> footer}}
 </template>

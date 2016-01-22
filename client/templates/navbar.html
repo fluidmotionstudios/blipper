@@ -1,7 +1,3 @@
-<body>
-
-</body>
-
 <template name="navbar">
   <div class="navbar-fixed">
     <nav>
@@ -9,10 +5,12 @@
         <a href="#!" class="brand-logo center waves-effect waves-red">BLIPPER</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a class="waves-effect waves-red" href="#!">Home</a></li>
+          <li><a class="waves-effect waves-red" href="/">Home</a></li>
           <li><a class="waves-effect waves-red" href="#!">About</a></li>
-          <li><a class="waves-effect waves-red" href="#!">Posts</a></li>
-          <li><a class="waves-effect waves-red" href="#!">Register</a></li>
+          <li><a class="waves-effect waves-red" href="{{pathFor 'posts'}}">Posts</a></li>
+          <li><a class="waves-effect waves-red" href="/sign-in">Sign In</a></li>
+          <li><a class="waves-effect waves-red" href="/sign-up">Register</a></li>
+          <li><a class="waves-effect waves-red" href="profile">Edit Profile</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <li><a href="#!">Home</a></li>
