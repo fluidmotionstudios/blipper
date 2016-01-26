@@ -25,3 +25,7 @@ useraccounts:materialize
 gildaspk:autoform-materialize
 aldeed:collection2
 useraccounts:iron-routing
+cfs:standard-packages
+cfs:gridfs
+aldeed:autoform
+aldeed:simple-schema

@@ -1,3 +1,17 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .copyright {
+    padding-top: 8px;
+  }
+
 .container {
   margin-top: 60px;
 }
@@ -13,5 +27,9 @@ img {
 }
 
 .btn:hover, .btn-large:hover {
-    background-color: #BCC3C3;
+    background-color: #607d8b;
+}
+
+.btn, .btn-large {
+  background-color: #263238;
 }

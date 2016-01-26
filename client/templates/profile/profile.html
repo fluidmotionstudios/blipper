@@ -1,3 +1,20 @@
 <template name="profile">
   <h3>Edit Your Profile</h3>
+
+  <form class="edit-profile" enctype="multipart/form-data">
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>File</span>
+        <input type="file" name="profileImage" id="profileImage">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="Upload Your Image">
+      </div>
+    </div>
+<br />
+<br />
+    <button class="btn waves-effect waves-light" type="submit">
+      Add Photo
+    </button>
+  </form>
 </template>
