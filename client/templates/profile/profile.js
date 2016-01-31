@@ -14,8 +14,9 @@ Template.profile.events({
 
           UserImages.insert({
             userId: Meteor.userId(),
-            username: Meteor.user().username,
-            image: imageLoc
+            username: Meteor.user().profile.name,
+            image: imageLoc,
+            createdAt: new Date()
           });
 
           Router.go('/');
@@ -26,3 +27,15 @@ Template.profile.events({
     return false;
   }
 });
+
+Template.profile.helpers({
+  email: function() {
+    return Meteor.user().emails[0].address;
+  }
+});
+
+//Template.profile.helpers({
+  //profileimage: function (userId) {
+    //return ProfileImages.findOne({userId: userId}); // Where Images is an FS.Collection instance
+  //}
+//});

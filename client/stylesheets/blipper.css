@@ -33,3 +33,23 @@ img {
 .btn, .btn-large {
   background-color: #263238;
 }
+
+.at-title {
+  text-align: center;
+}
+
+.at-signin-link p {
+  text-align: center;
+}
+
+.at-signup-link p {
+  text-align: center;
+}
+
+.post-image {
+  margin-top: 10px;
+}
+
+.profile-image {
+  width: 100%;
+}

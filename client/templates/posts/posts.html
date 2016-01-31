@@ -17,68 +17,22 @@
 <br />
 <hr>
 
+{{#each posts}}
 <div class="row post z-depth-2">
   <div class="col s1">
-    <img src="img/blank-avatar.png" />
+    <img class="post-image" src="{{getProfileImg userId}}" />
   </div>
 
   <div class="col s11">
-    <small>Posted By Mike at 6:45 PM on 1/18/2016</small>
+    <small>Posted By {{name}} at {{createdAt}}</small>
     <blockquote>
-      This is the user's post
+      {{body}}
     </blockquote>
   </div>
 </div>
-
-<div class="row post z-depth-2">
-  <div class="col s1">
-    <img src="img/blank-avatar.png" />
-  </div>
-
-  <div class="col s11">
-    <small>Posted By Mike at 6:45 PM on 1/18/2016</small>
-    <blockquote>
-      This is the user's post
-    </blockquote>
-  </div>
-</div>
-
-<div class="row post z-depth-2">
-  <div class="col s1">
-    <img src="img/blank-avatar.png" />
-  </div>
-
-  <div class="col s11">
-    <small>Posted By Mike at 6:45 PM on 1/18/2016</small>
-    <blockquote>
-      This is the user's post
-    </blockquote>
-  </div>
-</div>
-
-<div class="row post z-depth-2">
-  <div class="col s1">
-    <img src="img/blank-avatar.png" />
-  </div>
-
-  <div class="col s11">
-    <small>Posted By Mike at 6:45 PM on 1/18/2016</small>
-    <blockquote>
-      This is the user's post
-    </blockquote>
-  </div>
-</div>
-
-<div class="row post z-depth-2">
-  <div class="col s1">
-    <img src="img/blank-avatar.png" />
-  </div>
-
-  <div class="col s11">
-    <small>Posted By Mike at 6:45 PM on 1/18/2016</small>
-    <blockquote>
-      This is the user's post
-    </blockquote>
-  </div>
-</div>
+{{else}}
+  <p>
+    No Posts Yet
+  </p>
+{{/each}}
 </template>
