@@ -32,9 +32,10 @@
       </button>
     </form>
   </div>
-
+	{{#with user}}
   <div class="col s6">
-    <img src="{{getProfileImg userId}}" alt="ProfileImg" />
+    <img class="profile-image" src="{{getProfileImg userId}}" alt="ProfileImg" />
   </div>
+		{{/with}}
 </div>
 </template>

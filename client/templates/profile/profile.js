@@ -35,7 +35,13 @@ Template.profile.helpers({
 });
 
 //Template.profile.helpers({
-  //profileimage: function (userId) {
-    //return ProfileImages.findOne({userId: userId}); // Where Images is an FS.Collection instance
+  //user: function() {
+    //return Meteor.users.findOne(this.userId);
   //}
 //});
+
+Template.profile.helpers({
+  user: function () {
+    return Meteor.users.findOne(this._id);
+  }
+});

@@ -30,10 +30,10 @@ Router.route('/profile');
 AccountsTemplates.configureRoute('signIn', {
   template: 'signin',
   layoutTemplate: 'layout',
-  redirect: '/posts',
+  redirect: '/posts'
 });
 AccountsTemplates.configureRoute('signUp', {
   template: 'signup',
   layoutTemplate: 'layout',
-  redirect: '/profile',
+  redirect: '/profile'
 });

@@ -20,10 +20,10 @@
 {{#each posts}}
 <div class="row post z-depth-2">
   <div class="col s1">
-    <img class="post-image" src="{{getProfileImg userId}}" />
+    <img class="post-image circle" src="{{getProfileImg userId}}" />
   </div>
 
-  <div class="col s11">
+  <div class="post-body col s11">
     <small>Posted By {{name}} at {{createdAt}}</small>
     <blockquote>
       {{body}}
